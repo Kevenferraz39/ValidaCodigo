@@ -46,7 +46,7 @@ const agenda = () => {
               description: descricao,
               location: local
             });
-  
+            
             // Adicionar convidados
             if (convidados.length > 0) {
               Logger.log('Adicionando convidados: ' + convidados.join(', '));
