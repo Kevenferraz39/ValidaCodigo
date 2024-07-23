@@ -1,8 +1,8 @@
 function enviarEmailParaListaDeEmails() {
-  var assunto = "Solicitação de etiquetas aberta!";
-  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Respostas ao formulário 1");
-  var ultimaLinha = sheet.getLastRow();
-  var ultimaColuna = sheet.getLastColumn();
+  var assunto = "Solicitação de etiquetas aberta!";//Determina o titulo do email
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Respostas ao formulário 1");//obtem o conteúdo do email
+  var ultimaLinha = sheet.getLastRow(); //obtem a ultima linha
+  var ultimaColuna = sheet.getLastColumn(); // obtem a ultima coluna
   
   // Verifica se há dados na planilha
   if (ultimaLinha < 2) {
